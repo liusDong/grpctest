@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+service gRPC{
+    rpc KeyPress(KeyRequest) returns(KeyReply){}
+}
+
+message KeyRequest{
+    int32 code = 1;
+}
+message KeyReply{
+    int32 res = 1;
+}
